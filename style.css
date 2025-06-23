@@ -1,0 +1,358 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color:white;
+  color: #333;
+}
+
+header {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/saguenay.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.headerposter {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/allemagne.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.headerresearch {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/amsterdam.JPG');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.headerconference {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/slovaquie.JPG');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.headercv {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/autriche.JPG');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.headerextra {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/cafe.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+.topnav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+/* rest stays the same */
+nav a, .dropbtn {
+  color: white;
+  background: none;
+  border: none;
+  text-decoration: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.name {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+
+.dropdown {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+section {
+  padding: 60px 30px;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  font-size: 18px;
+}
+
+.arrow {
+border: solid white;
+border-width: 0 2px 2px 0;
+display: inline-block;
+padding: 3.5px;
+position: relative;
+left: -10px;
+top: -2.5px;
+}
+.myarrow {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+html {
+  scrollbar-width: Thin;
+  scrollbar-color: #888 #f0f0f0;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+  width: 100%;
+     }
+  }
+
+@media screen and (max-width: 1000px) {
+  .column1 {
+  width: 100%;
+     }
+  }
+
+  @media (max-width: 1000px) {
+  header {
+    min-height: 35vh;
+  }}
+
+  a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(163, 176, 248, 0.911);
+  background-color: transparent;
+}
+
+a.a1:link {
+  color: gray;
+  text-decoration: none;
+}
+
+a.a1:visited {
+  color: gray;
+}
+
+a.a1:hover {
+  color: rgb(74, 74, 74);
+  text-decoration: underline;
+}
+
+a.a2:link {
+  color: gray;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+/*a.a1:visited {
+  color: purple;
+}*/
+
+a.a2:hover {
+  color: rgb(74, 74, 74);
+  text-decoration: underline;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-column.text-column {
+  align-items: flex-start;
+}
+
+.left-column.text-column h4,
+.left-column.text-column h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.left-column.text-column h2 {
+  margin-top: 8px; /* or whatever small value looks good to you */
+}
+
+.left-column.text-column ul.p2 {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+  width: 100%; /* ensures it takes full column width */
+}
+
+.left-column.text-column ul.p2 li {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 5px; /* optional: space between bullet and text */
+}
+
+
+.header-caption {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+
+
+
+

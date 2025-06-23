@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Félix Gélinas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <style>
+    /* Universal box-sizing reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+
+    section {
+      text-align: justify;
+      max-width: 65%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="margin-top: 70px;"> Félix Gélinas</h1>
+  <div class="header-caption">Petit-Saguenay, Québec</div>
+</header>
+
+<nav class="topnav">
+  <div class="name">
+    <a href="index.html">Félix Gélinas</a>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="Cv.html">CV</a>
+    <a href="extra.html">Extra</a>
+  </div>
+</nav>
+
+<head >
+  <link rel="stylesheet" />
+  <style>
+    #home {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+    #home > div {
+      display: flex;
+      align-items: flex-start;  
+      justify-content: center;
+      width: 90vw;
+      max-width: 1200px;
+      gap: 20px;
+    }
+
+    #home img {
+      width: 42%;
+      height: auto;
+      object-fit: contain;
+      margin-top: 55px;
+    }
+
+    #home div > div {
+      width: 2700px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #333;
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    #home div > div p {
+      margin-bottom: 1em;
+    }
+
+    /* Responsive: stack text under image on small screens */
+    @media (max-width: 700px) {
+      #home > div {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #home img,
+      #home div > div {
+        width: 100%;
+      }
+
+      #home div > div {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="home" >
+    <div>
+      <img src="image/moi.jpg" alt="Description" />
+      <div>
+        <h2 style="text-align: justify; font-size: 40px;">Bonjour-Hi</h2>
+        <p style="text-align: justify;">I am a second-year mathematics PhD student at York University under the supervision of <a class="a1" href="https://bergeron.mathstats.yorku.ca/">Nantel Bergeron</a> and <a class="a1" href="https://www.ub.edu/comb/vincentpilaud/">Vincent Pilaud</a>.</p>
+        <p style="text-align: justify;">I earned my master’s degree from the University of Toronto in 2023 and my bachelor’s degree from the Université du Québec à Montréal in 2022.</p>
+        <p style="text-align: justify;">My research lies in combinatorics, focusing on the interplay between partially ordered set theory (posets), polytopes, and hypergraphs.</p>
+        <p style="text-align: justify;">Enjoy discussing topics in algebraic and enumerative combinatorics and I am always open to connecting with others working on related projects or exploring new ideas in these areas.</p>
+        <p style="text-align: justify;"><img src="image/Sketches.jpg" alt="Description" / style="display: block; margin: 0 auto; width: 550px; height: auto;""></p>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+
+<footer>
+  <p>felixgel at yorku dot ca</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

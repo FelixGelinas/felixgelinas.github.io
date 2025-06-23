@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <style>
+    /* Universal box-sizing reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+
+    section {
+      text-align: justify;
+      max-width: 65%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      text-decoration: underline;
+    }
+
+    ul.p2 { padding-left: 20px; }
+
+    hr.border-hr-solid {
+      border: 1px solid gray;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="headercv">
+  <h1 style="margin-top: 70px;">CV</h1>
+  <div class="header-caption">Salzbourg, Austria</div>
+</header>
+
+<nav class="topnav">
+  <div class="name">
+    <a href="index.html">Félix Gélinas</a>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="Cv.html">CV</a>
+    <a href="extra.html">Extra</a>
+  </div>
+</nav>
+
+<section>
+  <p><span style="text-decoration: underline;">Last update:</span> May 2025</p>
+  <div style="text-align: center;">
+    <embed id="CAAC2024" src="CV/CV_resume.pdf" type="application/pdf" width="800px" height="1065px" style="display: inline-block;">
+  </div>
+</section>
+
+
+<footer>
+  <p>felixgel at yorku dot ca</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
