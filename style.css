@@ -92,7 +92,7 @@ header {
   font-family: 'Segoe UI', sans-serif;
   font-size: 23px;
   height: 35vh;
-  background-image: url('image/autriche.jpg');
+  background-image: url('image/autriche.JPG');
   background-size: cover;
   background-position: center;
   color: white;
@@ -103,7 +103,6 @@ header {
   width: 100%;
   flex-direction: column;
 }
-
 
 .headerextra {
   position: relative;
@@ -150,20 +149,20 @@ nav a, .dropbtn {
   background: none;
   border: none;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 3% 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 107%;
 }
 
 .name {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 100%;
 }
 
 
 .dropdown {
   position: relative;
-  top: -3px;
+  top: -4.0939px;
   display: inline-block;
   margin-top: 8px;
 }
@@ -352,6 +351,64 @@ a.a2:hover {
   font-size: 14px;
   border-radius: 4px;
 }
+
+/* Hamburger icon, hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile menu — hidden by default */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
+/* Mobile menu links styling */
+.mobile-menu a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  background-color: #555;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  header, 
+  .headerposter, 
+  .headerresearch, 
+  .headerconference, 
+  .headercv, 
+  .headerextra {
+    min-height: 250px;
+    height: auto;
+  }
+}
+
 
 
 
