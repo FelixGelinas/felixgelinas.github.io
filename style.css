@@ -87,13 +87,12 @@ header {
   flex-direction: column;
 }
 
-
 .headercv {
   position: relative;
   font-family: 'Segoe UI', sans-serif;
   font-size: 23px;
   height: 35vh;
-  background-image: url("image/autriche.jpg");
+  background-image: url('image/autriche.JPG');
   background-size: cover;
   background-position: center;
   color: white;
@@ -299,13 +298,35 @@ a.a2:link {
   text-decoration: underline;
 }
 
-/*a.a1:visited {
-  color: purple;
-}*/
+
+a.a3:visited {
+  color: white;
+}
+
+a.a1:visited {
+  color: gray;
+}
+
+a.a2:visited {
+  color: gray;
+}
+
+a:visited {
+  color: white;
+}
 
 a.a2:hover {
   color: rgb(74, 74, 74);
   text-decoration: underline;
+}
+
+a.a3:link {
+  color:  white;
+  text-decoration: none;
+}
+
+a.a3:hover {
+  color: rgb(221, 221, 221);
 }
 
 .left-column {
