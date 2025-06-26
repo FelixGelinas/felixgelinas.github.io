@@ -55,37 +55,45 @@
     <a href="index.html">Félix Gélinas</a>
   </div>
   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Research.html">Research</a>
-      <a href="Poster.html">Posters</a>
-      <a href="conference.html">Seminars & Conferences</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!--<div class="dropdown">
+      <button class="dropbtn">
+        <a href="extra.html">Extra</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="extra.html#mountains">Mountains</a>
+        <a href="game.html">Game</a>-->
+      </div>
     </div>
   </div>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="Research.html">Research</a>
-  <a href="Poster.html">Posters</a>
-  <a href="conference.html">Seminars & Conferences</a>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!-- <a href="game.html">Game</a> -->
+  </div>
 </nav>
 
-<section>
-  <p><span style="text-decoration: underline;">Last update:</span> May 2025</p>
+<section class="cv-section">
+  <p><span style="text-decoration: underline;">Last update:</span> May 2025 </p>
   <div style="text-align: center;">
-    <embed id="CAAC2024" src="CV/CV_resume.pdf" type="application/pdf" width="800px" height="1065px" style="display: inline-block;">
+    <embed id="CAAC2024" src="CV/CV_resume.pdf" type="application/pdf" class="cv-embed" style="width:100%;max-width:100vw;height:90vh;min-height:400px;display:inline-block;">
   </div>
 </section>
 
@@ -93,6 +101,21 @@
 <footer>
   <p>felixgel at yorku dot ca</p>
 </footer>
+
+<script>
+document.querySelectorAll('.hidden-word-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const word = this.getAttribute('data-word');
+    this.disabled = true;
+    let foundWords = JSON.parse(localStorage.getItem('foundWords') || '[]');
+    if (!foundWords.includes(word)) {
+      foundWords.push(word);
+      localStorage.setItem('foundWords', JSON.stringify(foundWords));
+    }
+  });
+});
+</script>
+
 
 <script src="script.js"></script>
 </body>

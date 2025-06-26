@@ -38,7 +38,7 @@
 
 <body>
 
-<header>
+<header style="position:relative;">
   <h1 style="margin-top: 70px;"> Félix Gélinas</h1>
   <div class="header-caption"><a class="a3" href="https://fr.wikipedia.org/wiki/Petit-Saguenay">Petit-Saguenay, Québec</a></div>
 </header>
@@ -47,34 +47,40 @@
   <div class="name">
     <a href="index.html">Félix Gélinas</a>
   </div>
-
   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Research.html">Research</a>
-      <a href="Poster.html">Posters</a>
-      <a href="conference.html">Seminars & Conferences</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!--<div class="dropdown">
+      <button class="dropbtn">
+        <a href="extra.html">Extra</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="extra.html#mountains">Mountains</a>
+        <a href="game.html">Game</a>-->
+      </div>
     </div>
   </div>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="Research.html">Research</a>
-  <a href="Poster.html">Posters</a>
-  <a href="conference.html">Seminars & Conferences</a>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!-- <a href="game.html">Game</a> -->
+  </div>
 </nav>
 
 <head >
@@ -122,7 +128,7 @@
     }
 
     /* Responsive: stack text under image on small screens */
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
       #home > div {
         flex-direction: column;
         align-items: center;
@@ -141,16 +147,21 @@
 </head>
 
 <body>
-  <section id="home" >
+  <section id="home">
     <div>
       <img src="image/moi.JPG" alt="Description" />
       <div>
         <h2 style="text-align: justify; font-size: 40px;">Bonjour-Hi</h2>
-        <p style="text-align: justify;">I am a second-year mathematics PhD student at York University under the supervision of <a class="a1" href="https://bergeron.mathstats.yorku.ca/">Nantel Bergeron</a> and <a class="a1" href="https://www.ub.edu/comb/vincentpilaud/">Vincent Pilaud</a>.</p>
+        <p style="text-align: justify;">I am a second-year mathematics PhD student at York University under the supervision of
+          <a class="a1" href="https://bergeron.mathstats.yorku.ca/">Nantel Bergeron</a> and
+          <a class="a1" href="https://www.ub.edu/comb/vincentpilaud/">Vincent Pilaud</a>.
+        </p>
         <p style="text-align: justify;">I earned my master’s degree from the University of Toronto in 2023 and my bachelor’s degree from the Université du Québec à Montréal in 2022.</p>
         <p style="text-align: justify;">My research lies in combinatorics, focusing on the interplay between partially ordered set theory (posets), polytopes, and hypergraphs.</p>
         <p style="text-align: justify;">Enjoy discussing topics in algebraic and enumerative combinatorics and I am always open to connecting with others working on related projects or exploring new ideas in these areas.</p>
-        <p style="text-align: justify;"><img src="image/Sketches.jpg" alt="Description" / style="display: block; margin: 0 auto; width: 80%; height: auto;""></p>
+        <p style="text-align: justify;">
+          <img src="image/Sketches.jpg" alt="Description" style="display: block; margin: 0 auto; width: 80%; height: auto;">
+        </p>
       </div>
     </div>
   </section>
@@ -163,6 +174,20 @@
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+document.querySelectorAll('.hidden-word-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const word = this.getAttribute('data-word');
+    this.disabled = true;
+    let foundWords = JSON.parse(localStorage.getItem('foundWords') || '[]');
+    if (!foundWords.includes(word)) {
+      foundWords.push(word);
+      localStorage.setItem('foundWords', JSON.stringify(foundWords));
+    }
+  });
+});
+</script>
 </body>
 </html>
 

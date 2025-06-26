@@ -45,31 +45,39 @@
     <a href="index.html">Félix Gélinas</a>
   </div>
   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Research.html">Research</a>
-      <a href="Poster.html">Posters</a>
-      <a href="conference.html">Seminars & Conferences</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!--<div class="dropdown">
+      <button class="dropbtn">
+        <a href="extra.html">Extra</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="extra.html#mountains">Mountains</a>
+        <a href="game.html">Game</a>-->
+      </div>
     </div>
   </div>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="Research.html">Research</a>
-  <a href="Poster.html">Posters</a>
-  <a href="conference.html">Seminars & Conferences</a>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!-- <a href="game.html">Game</a> -->
+  </div>
 </nav>
 
 <head >
@@ -255,7 +263,7 @@
       </div>
     </div>
   </section>
-</body>
+</section>
 
 
 
@@ -263,6 +271,20 @@
   <p>felixgel at yorku dot ca</p>
 </footer>
 
+
+<script>
+document.querySelectorAll('.hidden-word-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const word = this.getAttribute('data-word');
+    this.disabled = true;
+    let foundWords = JSON.parse(localStorage.getItem('foundWords') || '[]');
+    if (!foundWords.includes(word)) {
+      foundWords.push(word);
+      localStorage.setItem('foundWords', JSON.stringify(foundWords));
+    }
+  });
+});
+</script>
 <script src="script.js"></script>
 </body>
 </html>

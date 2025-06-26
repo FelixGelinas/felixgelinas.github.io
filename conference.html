@@ -37,6 +37,26 @@
       border: 1px solid gray;
     }
 
+    @media (max-width: 1000px) {
+      section {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        padding: 0 2vw !important;
+        font-size: 1em !important;
+        line-height: 1.6 !important;
+        box-sizing: border-box;
+      }
+      h1, h2, h3 {
+        font-size: 1.15em !important;
+        margin-top: 10px !important;
+      }
+      ul.p2, ul.p2 li {
+        font-size: 1em !important;
+        line-height: 1.7 !important;
+        letter-spacing: 0.01em;
+      }
+    }
+
   </style>
 </head>
 
@@ -51,32 +71,40 @@
   <div class="name">
     <a href="index.html">Félix Gélinas</a>
   </div>
- <div class="nav-links">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Research.html">Research</a>
-      <a href="Poster.html">Posters</a>
-      <a href="conference.html">Seminars & Conferences</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!--<div class="dropdown">
+      <button class="dropbtn">
+        <a href="extra.html">Extra</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="extra.html#mountains">Mountains</a>
+        <a href="game.html">Game</a>-->
+      </div>
     </div>
   </div>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="Research.html">Research</a>
-  <a href="Poster.html">Posters</a>
-  <a href="conference.html">Seminars & Conferences</a>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!-- <a href="game.html">Game</a> -->
+  </div>
 </nav>
 
 <section>
@@ -167,7 +195,7 @@
   <p class="" style="margin: 35px;"></p>
 
   <ul class="p2" style="list-style-type:square">
-  <li>Workshop on Computational and Applied Enumerative Geometry, The Fields Institute, Toronto, Ontario, Canada, June, 2024.</li>
+  <li>Workshop on Computational and Applied Enumerative Geometry, The Fields Institute, Toronto, Ontario, Canada, June, 2024.</li> 
   <li>ISM Discovery School: Advances in Geometric Combinatorics and Representation Theory, Université du Québec à Montréal, Montréal, Québec, Canada, May, 2024</li>
   </ul>
 
@@ -268,6 +296,20 @@
 
   <p class="" style="margin: 35px;"></p>
 </section>
+
+<script>
+document.querySelectorAll('.hidden-word-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const word = this.getAttribute('data-word');
+    this.disabled = true;
+    let foundWords = JSON.parse(localStorage.getItem('foundWords') || '[]');
+    if (!foundWords.includes(word)) {
+      foundWords.push(word);
+      localStorage.setItem('foundWords', JSON.stringify(foundWords));
+    }
+  });
+});
+</script>
 
 <footer>
   <p>felixgel at yorku dot ca</p>

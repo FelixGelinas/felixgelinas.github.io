@@ -36,6 +36,26 @@
       border: 1px solid gray;
     }
 
+    @media (max-width: 1000px) {
+      section {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        padding: 0 2vw !important;
+        font-size: 1em !important;
+        line-height: 1.6 !important;
+        box-sizing: border-box;
+      }
+      h1, h2, h3 {
+        font-size: 1.15em !important;
+        margin-top: 10px !important;
+      }
+      ul.p2, ul.p2 li {
+        font-size: 1em !important;
+        line-height: 1.7 !important;
+        letter-spacing: 0.01em;
+      }
+    }
+
   </style>
 </head>
 
@@ -51,40 +71,57 @@
     <a href="index.html">Félix Gélinas</a>
   </div>
   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">
-      <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Research.html">Research</a>
-      <a href="Poster.html">Posters</a>
-      <a href="conference.html">Seminars & Conferences</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!--<div class="dropdown">
+      <button class="dropbtn">
+        <a href="extra.html">Extra</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="extra.html#mountains">Mountains</a>
+        <a href="game.html">Game</a>-->
+      </div>
     </div>
   </div>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
-
-<button class="hamburger" onclick="toggleMenu()">☰</button>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="Research.html">Research</a>
-  <a href="Poster.html">Posters</a>
-  <a href="conference.html">Seminars & Conferences</a>
-  <a href="CV.html">CV</a>
-  <a href="extra.html">Extra</a>
-</div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+    <!-- <a href="game.html">Game</a> -->
+  </div>
 </nav>
 
+
+
+
 <section>
-  <h2>Ongoing Projects:</h2>
+  <h2>Ongoing Projects</h2>
+
   <ul class="p2" style="list-style-type:square">
     <li>Gélinas, F. : “Source Characterization of the Hypergraphic Posets”.</li>
     <li><a class="a2" href="https://antoineabram.codeberg.page/">Abram, A.</a>; <a class="a2" href="https://bastidas-jose.codeberg.page/">Bastidas, J.</a>; Gélinas, F.; <a class="a2" href="https://www.ub.edu/comb/vincentpilaud/">Pilaud, V.</a>; <a class="a2" href="https://andrewsack.com/">Sack, A.</a>; <a class="a2" href="https://sites.google.com/view/tzanakel/">Tzanaki, E.</a>: “Hypergraphic Polytopes”.</li>
     <li>Gélinas, F.; <a class="a2" href="https://perso.imj-prg.fr/germain-poullot/">Poullot, G.</a>: “Hypergraphic Polytopes Diameter”.</li>
+    <li>Hypergraphic polytopes | Part 2, The Algebraic Combinatorics Workgroup, The Fields Institute, Toronto, Ontario, Canada, November, 2024.</li>
+    <li>Permutrees, Graduate student Group, The Fields Institute, Toronto, Ontario, Canada,  May, 2024.</li>
   </ul>
+
+  <div style="text-align:right; margin-top:10px;">
+  </div>
 
   <hr class="border-hr-solid" style="width:100%; text-align:left; margin-left:0">
 
@@ -134,9 +171,9 @@
   <h2>Poster:</h2>
   <ul class="p2" style="list-style-type:square">
     <li>Source Characterization of the Hypergraphic Posets, AlCoVE: an Algebraic Combinatorics Virtual Expedition, Online, May, 2025. </li>
-    <li>Proof of a conjecture of Matherne, Morales, and Selover on encodings of unit interval orders, VIII Encuentro Colombiano de Combinatoria (ECCO), Universidad del Cauca, Popayàn, Cauca, Colombia, June, 2024. </li>
+    <li>Proof of a conjecture of Matherne, Morales, and Selover on encodings of unit interval orders, VIII Encuentro Colombiano de Combinatoria (ECCO), Universidad del Cauca, Popayàn, Cauca, Colombia, June, 2024.</li>
     <li>The volume polynomial of a Matroid, Combinatorial Algebra meets Algebraic Combinatorics (CAAC), Université du Québec à Montréal, Montréal, Québec, Canada, January, 2024. <a class="a2" href="Poster.html#CAAC2024">Poster</a>. </li>
-    <li>Proof of a conjecture of Matherne, Morales, and Selover on encodings of unit interval orders, Combinatorial Algebra meets Algebraic Combinatorics (CAAC), University of Waterloo, Waterloo, Ontario, Canada, January, 2023. <a class="a2" href="Poster.html#CAAC2023">Poster</a>. </li>
+    <li>Proof of a conjecture of Matherne, Morales, and Selover on encodings of unit interval orders, Combinatorial Algebra meets Algebraic Combinatorics (CAAC), University of Waterloo, Waterloo, Ontario, Canada, January, 2023. <a class="a2" href="Poster.html#CAAC2023">Poster</a> </li>
   </ul>
 </section>
 
@@ -145,5 +182,20 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+document.querySelectorAll('.hidden-word-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const word = this.getAttribute('data-word');
+    this.disabled = true;
+    let foundWords = JSON.parse(localStorage.getItem('foundWords') || '[]');
+    if (!foundWords.includes(word)) {
+      foundWords.push(word);
+      localStorage.setItem('foundWords', JSON.stringify(foundWords));
+    }
+  });
+});
+</script>
+
+
 </body>
 </html>
