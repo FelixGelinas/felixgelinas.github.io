@@ -684,6 +684,18 @@ section {
   cursor: default;
 }
 
+.fi-qc {
+  display: inline-block;
+  width: 1.3333333333em;
+  height: 1.15em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-image: url("/image/extra/Quebec.png");
+  vertical-align: 0em;
+  flex-shrink: 0;
+  }
+
 
 /* Home section mobile improvements */
 /*@media (max-width: 1000px) {
@@ -728,6 +740,9 @@ section {
     letter-spacing: 0.01em;
   }
 }
+
+
+
 
 
 
