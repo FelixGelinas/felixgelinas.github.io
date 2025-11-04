@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Félix Gélinas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/permu.png" type="image/x-icon">
+
+</head>
+<body>
+
+  <style>
+    /* Universal box-sizing reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+
+    section {
+      text-align: justify;
+      max-width: 65%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Top navigation (no hero header) -->
+<nav class="topnav">
+  <div class="name">
+    <a href="index.html">Félix Gélinas</a>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="Research.html">Research</a> <i class="arrow myarrow"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Research.html">Research</a>
+        <a href="Poster.html">Posters</a>
+        <a href="conference.html">Seminars & Conferences</a>
+      </div>
+    </div>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Research.html">Research</a>
+    <a href="Poster.html">Posters</a>
+    <a href="conference.html">Seminars & Conferences</a>
+    <a href="CV.html">CV</a>
+    <a href="extra.html">Extra</a>
+  </div>
+</nav>
+
+<head >
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track map — Félix Gélinas</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" />
+  <style>
+    #home {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+    #home > div {
+      display: flex;
+      align-items: flex-start;  
+      justify-content: center;
+      width: 90vw;
+      max-width: 1200px;
+      gap: 20px;
+    }
+
+    #home img {
+      width: 42%;
+      height: auto;
+      object-fit: contain;
+      margin-top: 55px;
+    }
+
+    #home div > div {
+      width: 2700px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #333;
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    #home div > div p {
+      margin-bottom: 1em;
+    }
+
+    /* Responsive: stack text under image on small screens */
+    @media (max-width: 1000px) {
+      #home > div {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #home img,
+      #home div > div {
+        width: 100%;
+      }
+
+      #home div > div {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+
+
+<section id="map-section" style="padding: 0;">
+  <div id="gpxMap" aria-label="GPX map" role="region"></div>
+</section>
+
+<!-- Leaflet JS and GPX plugin -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

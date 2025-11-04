@@ -341,6 +341,29 @@ p {
     min-height: 35vh;
   }}
 
+  /* Map page adjustments: account for fixed topnav and make map fill remaining viewport */
+
+  /* Full-bleed map section: remove horizontal margins and let JS compute top offset */
+  #map-section {
+    padding: 0; /* dynamic top padding will be set by JS to match nav height */
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Default map height fallback (will be overridden by JS to use exact nav height) */
+  #gpxMap {
+    height: calc(100vh - 70px);
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+
+  @media (max-width: 800px) {
+    #map-section { padding-top: 60px; }
+    #gpxMap { height: calc(100vh - 60px); }
+  }
+
   a:link {
   color: white;
   background-color: transparent;
@@ -397,6 +420,25 @@ a.a2:hover {
 a.a3:link {
   color:  white;
   text-decoration: none;
+}
+
+/* Styles for the GPX map container */
+#map-section {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+#gpxMap {
+  height: 520px; /* main map height */
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 800px) {
+  #gpxMap {
+    height: 340px;
+  }
 }
 
 a.a3:hover {
