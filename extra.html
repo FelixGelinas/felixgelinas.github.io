@@ -150,6 +150,63 @@
       text-decoration: underline;
       font-size: 200%;
     }
+
+    /* Phone screen (≤800px): text first (one line), pictures at bottom */
+    @media (max-width: 800px) {
+      section {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #home {
+        padding: 0;
+        margin: 0;
+        display: block;
+      }
+      #home > div {
+        width: 100%;
+        margin: 0;
+        margin-left: 8px;
+        padding: 0;
+        flex-direction: column;
+        gap: 0px;
+        display: flex;
+        align-items: flex-start;
+      }
+      #home div > div {
+        width: 100%;
+        font-size: 8pt;
+        white-space: normal;
+        overflow: visible;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        order: 1;
+      }
+      #home div > div p {
+        margin: 0;
+        padding: 0;
+      }
+      #home div .left-column {
+        order: 2;
+      }
+      h2, h3 {
+        font-size: 120%;
+        white-space: normal;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      h4 {
+        font-size: 140%;
+        white-space: normal;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+    }
 </style>
 </head>
 
@@ -159,7 +216,7 @@
     <section id="home" >
     <div>
       <div class="left-column text-column">
-      <h4><span class="fi fi-qc" aria-hidden="true"></span>Québec:</h2>
+      <h4><span class="fi fi-qc" aria-hidden="true"></span>Québec:</h4>
        <h2>Gaspésie:</h2>
         <ul class="p2" style="list-style-type:square">
         <li>Mont Jacques-Cartier- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 1270m - 4167'</li>
@@ -174,7 +231,7 @@
         <p class="" style="margin: 15px;"></p>
         <li>Mont Ernest-Laforce - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -820m - 2690'</li>
         <p class="" style="margin: 15px;"></p>
-      <h2>Estrie:</h2>
+       <h2>Estrie:</h2>
         <p class="" style="margin: 15px;"></p>
         <ul class="p2" style="list-style-type:square">
         <li>Mont Orford - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -853m - 2799'</li>
@@ -291,9 +348,17 @@
         <p class="" style="margin: 15px;"></p>
       </ul>
         <h4><span class="fi fi-jp"></span>Japan:</h4>
+        <h2>Yamanashi:</h2>
+        <p class="" style="margin: 15px;"></p>
         <ul class="p2" style="list-style-type:square">
         <p class="" style="margin: 15px;"></p>
         <li><a class="a1" href="map.html?gpx=gpx/MountFuji.gpx">Mount Fuji (富士山)</a> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -3776m - 12389'</li>
+        <p class="" style="margin: 15px;"></p>
+      </ul>
+        <h2>Kyoto:</h2>
+        <ul class="p2" style="list-style-type:square">
+        <p class="" style="margin: 15px;"></p>
+        <li>Mount Inari- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 233m - 764' </li>
         <p class="" style="margin: 15px;"></p>
       </ul>
         <h4><span class="fi fi-hk"></span>Hong Kong:</h4>
@@ -309,7 +374,9 @@
         <p class="" style="margin: 15px;"></p>
         <li><a class="a1" href="map.html?gpx=gpx/LaMola.gpx">La Mola</a>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -1103m - 3618'</li>
         <p class="" style="margin: 15px;"></p>
-        <li><a class="a1" href="map.html?gpx=gpx/PuigdelesAgulles.gpx">Puig de les Agulles</a> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -553m - 1 814'</li>
+        <li><a class="a1" href="map.html?gpx=gpx/PuigdelesAgulles.gpx">Puig de les Agulles</a>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -553m - 1814'</li>
+        <p class="" style="margin: 15px;"></p>
+        <li><a class="a1" href="map.html?gpx=gpx/turodelhome.gpx">Turó de l'Home</a>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -1708m - 5603'</li>
         </ul>
       </div>
       <div class="left-column" >
