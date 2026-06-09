@@ -1,0 +1,19 @@
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.toc
+*.lof
+*.lot
+*-blx.bib
+*.gz
+*.loe
+*.DS_Store
+
+# Windows security files
+*.Zone.Identifier
+*.Identifier
