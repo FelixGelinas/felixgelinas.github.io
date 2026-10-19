@@ -129,6 +129,23 @@ header {
   flex-direction: column;
 }
 
+.headerTeaching {
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  height: 35vh;
+  background-image: url('image/SanFransisco.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
 
 .headerextra {
   position: relative;
